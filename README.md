@@ -7,8 +7,8 @@
 The standard `git rebase --onto <target> <upstream> <branch>` command is powerful but notoriously difficult to visualize. `grob` solves this by providing a step-by-step interactive workflow.
 
 ## Demo 🎥
-https://github.com/user-attachments/assets/d13caf3e-5f8f-43fa-a48f-8b5303ecc74a
 
+https://github.com/user-attachments/assets/3ec937d2-7e9b-4ff8-bbb7-7541bbb1e21b
 
 
 ### The Killer Use Case: Stacked PRs
