@@ -33,7 +33,38 @@ If you work with **Stacked Pull Requests** (e.g., Branch B is based on Branch A,
 
 ---
 
-## 📦 Installation (Oh-My-Zsh)
+## 📦 Installation
+
+### Homebrew (Recommended)
+
+Install `git-grob` as a git subcommand:
+
+```bash
+brew tap sspathak/tap
+brew install git-grob
+```
+
+Then use it with:
+```bash
+git grob
+```
+
+### Manual Installation
+
+1.  **Download the script:**
+    ```bash
+    curl -o /usr/local/bin/git-grob https://raw.githubusercontent.com/sspathak/zsh-grob/main/git-grob
+    chmod +x /usr/local/bin/git-grob
+    ```
+
+2.  **Use it:**
+    ```bash
+    git grob
+    ```
+
+### Oh-My-Zsh Plugin
+
+If you prefer using it as a Zsh plugin with `grob` (not `git grob`):
 
 1.  **Create the plugin directory:**
     ```bash
@@ -58,13 +89,15 @@ If you work with **Stacked Pull Requests** (e.g., Branch B is based on Branch A,
 
 ## 📖 How to Use
 
-Simply type `grob` in your terminal. You can also pass optional flags that will be appended to the final command:
+Simply type `git grob` in your terminal. You can also pass optional flags that will be appended to the final command:
 
 ```bash
-grob -i            # Opens the rebase in interactive mode after selection
-grob --autosquash  # Enables autosquash
-grob -Xours        # Uses the "ours" merge strategy
+git grob -i            # Opens the rebase in interactive mode after selection
+git grob --autosquash  # Enables autosquash
+git grob -Xours        # Uses the "ours" merge strategy
 ```
+
+**Note:** If you installed via Oh-My-Zsh plugin, you can use `grob` instead of `git grob`.
 
 ### Step 1: Select the Target
 Pick the branch where you want the commits to land (the "destination"). A preview window will show you the recent history of the highlighted branch to help you confirm it's the right choice.
